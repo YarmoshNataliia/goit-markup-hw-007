@@ -33,17 +33,25 @@ ol {
 
 img {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 .container {
-  max-width: 426px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
 }
 
 body {
@@ -58,14 +66,6 @@ button {
 
 .peage-header-container {
   display: flex;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
 }
 
 .section {
@@ -136,26 +136,33 @@ button {
 
 /* ---mob-menu--- */
 .menu-open-btn {
-  border: transparent;
-  background-color: transparent;
-  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
 .menu-icons {
   fill: #2e2f42;
 }
 
 .mob-menu {
-  z-index: 1;
   position: fixed;
+  z-index: 100;
   top: 0;
-  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #fff;
+  overflow-y: auto;
 }
 .mob-menu > .container {
   height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
