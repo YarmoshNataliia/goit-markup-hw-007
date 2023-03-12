@@ -1,9 +1,13 @@
 @media screen and (min-width: 480px) {
   .container {
+    max-width: 396px;
+  }
+
+  .container > .team-section {
     max-width: 294px;
   }
 
-  .coust-section > container {
+  .coust-section > .container {
     max-width: 426px;
   }
   /* .filter > container {
@@ -16,7 +20,7 @@
     max-width: 322px;
   }
   /* --ADVANTAGES-- */
-  .advantadest > container {
+  .advantadest > .container {
     max-width: 426px;
   }
   .div-container {
@@ -32,7 +36,7 @@
   .advantadest-text {
     max-width: 396px;
   }
-  .header > container {
+  .header > .container {
     max-width: 398px;
   }
   .peage-header-container {

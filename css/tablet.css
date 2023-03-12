@@ -110,6 +110,21 @@
   .advantadest-text {
     max-width: 356px;
   }
+  /* --mob-men-- */
+  .header-link.current {
+    position: relative;
+    color: #404bbf;
+  }
+  .current::after {
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
   /* ---Portfolio-768-- */
   /* .filter {
       padding-top: 64px;
