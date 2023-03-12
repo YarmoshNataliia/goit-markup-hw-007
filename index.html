@@ -17,6 +17,10 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+
   </head>
   <body>
     <!-- /* ---------------HEADER-------------------- */ -->
@@ -34,7 +38,7 @@
             <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <!-- address -->
+
         <address class="address">
           <ul class="address-list list">
             <li class="address-item">
@@ -45,6 +49,72 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-icons" width="32" height="32">
+            <use href="./images/icons.svg#icon-burger-menu" ></use>
+          </svg>
+        </button>
+      </div>
+       <!-- --MOB-MENU-- -->
+      <div class="mob-menu">
+     <div class="container">
+      <button class="menu-close-btn" type="button" data-modal-close>
+        <svg class="menu-close-icons" width="8" height="8" >
+          <use href="./images/icons.svg#icon-clos"></use>
+        </svg>
+      </button>
+      <ul class="menu-list list">
+        <li class="menu-item">
+          <a class="menu-link link current" href="">Studio</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="menu-address">
+        <ul class="menu-address-list list">
+          <li class="menu-tel-item">
+            <a class="menu-tel-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="menu-address-item">
+            <a class="menu-address-mailo link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+
+        </ul>
+        <div class="menu-socil">
+          <ul class="menu-social-list list">
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icons" width="16" height="16"> 
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a></li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icons" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a></li>
+          </ul>
+     </div>
+          </div>
+        
       </div>
     </header>
     <main>
@@ -57,9 +127,9 @@
       </section>
       <!------------ Секція2- ADVANTAGES------------>
       <section class="advantadest section">
-        <div class="container">
+        <div class="div-container container">
           <h2 class="visually-hidden">Advantages of cooperation with us</h2>
-          <!-- далі цей заголовок ск  h1иється в стилях. відсутній на сайті -->
+         
           <ul class="advantadest-list list dflist">
             <li class="advantadest-item">
               <a href="" class="advantadest-link link">
@@ -133,11 +203,12 @@
       <section class="team-section">
         <div class="container">
           <h2 class="team-title-container">Our Team</h2>
-          <ul class="team-list list dflist">
+          <ul class="team-list list">
             <li class="team-item">
               <img
                 src="./images/mark.jpg"
                 alt="portrait photo of the Product Designer"
+                srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
                 width="264"
               />
               <div class="team-text-wraper">
@@ -175,6 +246,7 @@
               <img
                 src="./images/tom.jpg"
                 alt="portrait photo of the Frontend Developer"
+                srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
                 width="264"
               />
               <div class="team-text-wraper">
@@ -210,7 +282,10 @@
               
             </li>
               <li class="team-item">
-                <img src="./images/camila.jpg" alt="portrait photo of the Marketing" width="264" />
+                <img src="./images/camila.jpg" 
+                alt="portrait photo of the Marketing"
+                srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                width="264" />
                 <div class="team-text-wraper">
                   <h3 class="team-title">Camila Garcia</h3>
                   <p class="team-text">Marketing</p>
